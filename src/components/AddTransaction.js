@@ -2,13 +2,6 @@ import React, { useState, useContext } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { GlobalContext } from "../context/GlobalState";
 
-//material-ui
-import InputLabel from "@material-ui/core/InputLabel";
-import OutlinedInput from "@material-ui/core/OutlinedInput";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-
 const AddTransaction = () => {
   const { addTransaction } = useContext(GlobalContext);
   const [transaction, setTransaction] = useState({});
